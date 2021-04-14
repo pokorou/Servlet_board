@@ -59,7 +59,7 @@
 		<hr noshade></hr>
 		<h2>スレッド新規作成</h2>
 		<div class="bg-light p-5 rounded">
-			<form action="/IndexController" method="POST">
+			<form action="/ServletSample/IndexController" method="POST">
 				<div class="lead">
 					タイトル名: <input type="text" name=title>
 				</div>
