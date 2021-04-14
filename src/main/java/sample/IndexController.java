@@ -13,20 +13,22 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/IndexController")
 public class IndexController extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+	private static final long serialVersionUID = 1L;      
     public IndexController() {
         super();
-//サーブレット修正を修正
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		 getServletConfig().getServletContext().
@@ -45,10 +47,10 @@ public class IndexController extends HttpServlet {
 		
 		switch(buttonName) {
 		case "newThread":
-			address="/new.jsp";
+			address="/index.jsp";
 			break;
 		case "search":
-			address="/new.jsp";
+			address="/index.jsp";
 			break;
 		}
 		
