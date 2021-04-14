@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Context docBase="ServletSample" path="/ServletSample"
+	reloadable="true">
+	<!--
+	<Realm className="org.apache.catalina.realm.DataSourceRealm"
+		dataSourceName="jdbc/selfjsp" localDataSource="true"
+		roleNameCol="role" userCredCol="passwd" userNameCol="uid"
+		userRoleTable="usr_role" userTable="usr" />
+	-->
+	
+	<Resource name="jdbc/bulletin_board" auth="Container" type="javax.sql.DataSource" username="root" password="" driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost/bulletin_board?useUnicode=true&amp;characterEncoding=UTF-8" maxActive="4" maxWait="5000" maxIdle="2" validationQuery="SELECT count(*) FROM  thread_table" ></Resource><!--
+	<Valve className="org.apache.catalina.valves.AccessLogValve"
+		prefix="SelfJsp." suffix=".log"
+		fileDateFormat="yyyy-MM" pattern="%t %U %T %a %b" />
+	-->
+</Context>
