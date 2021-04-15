@@ -44,7 +44,7 @@
 </head>
 <body>
  <jsp:include page="header.jsp" flush="true" />
-	
+
 	<main class="container">
 		<h2>スレッド一覧</h2>
 		<div class="bg-light p-5 rounded">
