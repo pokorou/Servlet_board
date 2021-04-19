@@ -53,7 +53,7 @@
 				<input type="hidden" name="buttonName" value="commentView">
 				<input type="hidden" name="threadNumber" value=<%=tb.getId() %>>
 					<button class="btn btn-lg btn-primary" type="submit"
-						role="button">詳細を見る &raquo;</button><%=tb.getId() %>
+						role="button">詳細を見る &raquo;</button>
 						</form>
 				</div>
 			</div>

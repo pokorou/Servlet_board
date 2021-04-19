@@ -24,6 +24,7 @@ public class CommentController extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
 		 ConnectionDB connectionDB=new ConnectionDB();
 			connectionDB.newComment(Integer.parseInt(request.getParameter("threadNumber")), (String)IndexController.session.getAttribute("name"), request.getParameter("message"));
 		request.setAttribute("data",  connectionDB.selectCommentOfThis(Integer.parseInt(request.getParameter("threadNumber"))));		

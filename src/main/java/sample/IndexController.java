@@ -49,10 +49,12 @@ public class IndexController extends HttpServlet {
 			address="/index.jsp";
 			break;
 		case "search":
+			System.out.println("aa");
+			System.out.println(request.getParameter("searchWord"));
 			request.setAttribute("data", connectionDB.searchThread(request.getParameter("searchWord")));
 			address="/index.jsp";
 			break;
-		case"/changeName":
+		case"changeName":
 			address="/changeName.jsp";
 			break;
 		case"commentView":

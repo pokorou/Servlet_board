@@ -7,7 +7,7 @@
 			
 			<div class="float-right">作成者 川内</div>
 			
-				<a href="ServletController">ホームへ戻る</a>
+				<a href="IndexController">ホームへ戻る</a>
 			
 			</div>
 		</div>
